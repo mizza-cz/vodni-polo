@@ -1,0 +1,330 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+a {
+    @include transition(all .4s ease-in-out);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5625rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.animated-icon1,
+.animated-icon2,
+.animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon1 span,
+.animated-icon2 span,
+.animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 50px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+    background: $white;
+}
+
+.animated-icon2 span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+    top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+    top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.navbar-toggler {
+    padding-top: 18px;
+    padding-bottom: 21px;
+
+    &:focus {
+        outline: 0px;
+    }
+}
+
+.nav-tabs {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 20px;
+
+    .nav-item {
+        text-transform: uppercase;
+        font-size: 21px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.95;
+        letter-spacing: normal;
+        padding: 20px 15px;
+        border-bottom: 3px solid transparent;
+        margin-bottom: -2px;
+
+        &.active {
+            background-color: transparent;
+        }
+
+        &.blue {
+            color: $primary;
+
+            &:hover,
+            &.active {
+                border-color: $primary;
+            }
+        }
+
+        &.blue2 {
+            color: $primaryaccent;
+
+            &:hover,
+            &.active {
+                color: $primary;
+                border-color: $primary;
+            }
+        }
+
+        &.pink {
+            color: $secondary;
+
+            &:hover,
+            &.active {
+                border-color: $secondary;
+            }
+        }
+
+        &.grey {
+            color: $grey;
+
+            &:hover,
+            &.active {
+                border-color: $grey;
+            }
+        }
+    }
+}
+
+.br-grey {
+    border-right: 1px solid $border-color;
+
+    @media (max-width: 1199px) {
+        border-right: 0px;
+    }
+}
+
+.br-btm{
+    border-bottom: 1px solid rgba(90, 135, 192, 0.2);
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 35px;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.btn-deco {
+    position: relative;
+    text-align: center;
+    margin-top: 45px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 45px;
+    }
+
+    &:before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: $border-color;
+        z-index: 1;
+    }
+
+    .btn {
+        z-index: 3;
+        margin-top: -27px;
+    }
+
+    &:after {
+        content: "";
+        height: 65px;
+        width: 240px;
+        display: block;
+        background-color: #fff;
+        z-index: 2;
+        margin-top: -57px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+table {
+    @extend .table;
+
+    td {
+        border-top: 1px solid $border-color;
+        padding: 17px 12px;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #000000;
+    }
+
+    thead {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: $grey-2;
+        text-transform: uppercase;
+
+        th {
+            padding-bottom: 14px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+}
+
+select{
+    background: url("../img/chevron-down.svg") no-repeat center right 8px;
+    background-size: 16px;
+    appearance: none;
+    padding: 7px 25px 7px 16px !important;
+    width: auto !important;
+    min-width: 185px;
+}
+
+.form-control{
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 rgba(202, 208, 225, 0.5);
+    border: solid 1px #bdc7d5;
+    background-color: #ffffff;
+    padding: 7px 16px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+label{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: $grey-2;
+    text-transform: uppercase;
+}
