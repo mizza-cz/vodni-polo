@@ -14887,7 +14887,7 @@ table td {
   color: #000000;
 }
 table thead {
-  font-family: Inter;
+
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -14918,7 +14918,7 @@ select {
   border: solid 1px #bdc7d5;
   background-color: #ffffff;
   padding: 7px 16px;
-  font-family: Inter;
+
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -14928,7 +14928,7 @@ select {
 }
 
 label {
-  font-family: Inter;
+
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -15780,7 +15780,7 @@ label {
   color: #000;
   position: relative;
   font-weight: bold;
-  font-family: Inter;
+
   font-size: 14px;
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(202, 208, 225, 0.5);
@@ -15850,7 +15850,7 @@ label {
   color: #000;
   position: relative;
   font-weight: bold;
-  font-family: Inter;
+
   font-size: 14px;
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(202, 208, 225, 0.5);
@@ -15932,7 +15932,7 @@ label {
   color: #000;
   position: relative;
   font-weight: bold;
-  font-family: Inter;
+
   font-size: 14px;
   width: 100%;
   padding: 20px 18px 28px 18px;
@@ -15991,7 +15991,7 @@ label {
   padding-top: 11px;
 }
 .match-detail .score div {
-  font-family: Inter;
+
   font-size: 14px;
   color: #000000;
   font-weight: normal;
@@ -16038,7 +16038,7 @@ label {
   color: #000;
   position: relative;
   font-weight: bold;
-  font-family: Inter;
+
   font-size: 14px;
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(202, 208, 225, 0.5);
@@ -16087,7 +16087,7 @@ label {
   margin-bottom: -6px;
 }
 .club-head .social-info {
-  font-family: Inter;
+
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -16127,7 +16127,7 @@ label {
   box-shadow: 0 4px 12px 0 rgba(156, 174, 196, 0.11);
   border: solid 1px #dee7f3;
   background-color: #ffffff;
-  font-family: Inter;
+
   font-size: 12px;
   font-weight: bold;
   font-stretch: normal;
@@ -16162,7 +16162,7 @@ label {
 }
 
 .calendar-info {
-  font-family: Inter;
+
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -16191,7 +16191,7 @@ label {
 }
 
 .tab-title {
-  font-family: Inter;
+
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -16456,7 +16456,7 @@ label {
     width: 150px;
     min-width: 150px;
   }
-  .nav-link {
+  #main-nav .nav-link {
     color: #fff !important;
   }
   .dropdown-menu .nav-link {
